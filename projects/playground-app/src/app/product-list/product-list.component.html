@@ -1,0 +1,6 @@
+<h2>Products</h2>
+
+<section *ngFor="let product of products; index as i; trackBy: identify" class="flex justify-between">
+	<a>{{i + 1}} - {{ product.title }}</a>
+	<span>{{ product.description }}</span>
+</section>
